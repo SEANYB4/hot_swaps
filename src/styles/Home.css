@@ -1,0 +1,38 @@
+.gallery {
+
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+    margin-top: 20px;
+    
+    
+}
+
+
+.galleryImage {
+
+    width: 100%;
+    height: auto;
+}
+
+
+.logo {
+
+    border-radius: 10px;
+}
+
+
+
+.info {
+    text-align: center;
+    padding: 20px;
+
+    width: 80%;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
