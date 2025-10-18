@@ -1,0 +1,14 @@
+.loginForm {
+
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+
+}
+
+
+label {
+
+    padding: 2rem;
+}

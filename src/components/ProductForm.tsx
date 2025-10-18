@@ -8,6 +8,9 @@ interface Product {
     id?: number;
     name: string;
     description: string;
+    price: number;
+    stock: number;
+    category: string;
 }
 
 type Params = {
@@ -16,7 +19,7 @@ type Params = {
 
 function ProductForm() {
 
-    const [product, setProduct] = useState<Product>({ name: '', description: ''});
+    const [product, setProduct] = useState<Product>({ name: '', description: '', price: 0, stock: 0, category: ''});
 
     const navigate = useNavigate();
 
@@ -44,6 +47,15 @@ function ProductForm() {
             </label>
             <label>Description:
                 <input type="text" name="description" value={product.description} onChange={handleChange} />
+            </label>
+            <label>Price:
+                <input type="number" name="price" value={product.price} onChange={handleChange} />
+            </label>
+            <label>Stock:
+                <input type="number" name="stock" value={product.stock} onChange={handleChange} />
+            </label>
+            <label>Category:
+                <input type="text" name="category" value={product.category} onChange={handleChange} />
             </label>
             <button type="submit">Submit</button>
         </form>

@@ -22,13 +22,15 @@ nav {
     padding: 40px 20px;
     list-style: none;
     width: 100vw;
+
  
 }
 
 
 .navBtn {
-    height: 3rem;
-    width: 10rem;
+
+
+    width: 15%;
     border: 2px solid white;
     display: flex;
     background-color: blanchedalmond;

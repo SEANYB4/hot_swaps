@@ -9,6 +9,9 @@ interface Product {
     _id: number;
     name: string;
     description: string;
+    price: number;
+    stock: number;
+    category: string;
 }
 
 
@@ -38,8 +41,8 @@ function ProductList() {
             
             <ul>
                     {products.map(product => (
-                    <li key={product._id}>
-                    {product.name} - {product.description}
+                    <li key={product._id} className='product'>
+                    <div className='productInfo'>{product.name}</div> <div className='productInfo'>{product.description}</div> <div className='productInfo'>{product.price}</div> <div className='productInfo'>{product.stock}</div> <div className='productInfo'>{product.category}</div>
                 </li>
                ))}
             </ul>

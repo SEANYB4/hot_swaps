@@ -5,3 +5,22 @@
     margin: 5px;
 
 }
+
+
+
+.product {
+
+
+    background-color: tomato;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+
+}
+
+
+.productInfo {
+
+    border: 2px solid black;
+}

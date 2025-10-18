@@ -5,6 +5,7 @@ import ProductForm from './components/ProductForm';
 import NavBar from './components/Navigation';
 import About from './components/About';
 import Home from './components/Home';
+import Login from './components/Login';
 
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/products" element={<ProductList />} />
           <Route path="/addProduct" element={<ProductForm />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
      </Router>
 
